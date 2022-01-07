@@ -12,3 +12,5 @@
 Requete : GET, POST, PUT, DELETE
 
 EndPoint : exemple = "/.id"
+
+* Install faker : npm i faker (pour l'installation de fausses données)
