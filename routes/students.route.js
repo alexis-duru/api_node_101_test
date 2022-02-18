@@ -7,13 +7,14 @@ import {
     getOneStudentById,
     updateOneStudentById,
     deleteOneStudentById,
+    deleteAllStudents,
     
 } from "../controllers/students.controller.js";
 
 export const router = express.Router();
 
 
-router.route("/").get(getStudents).post(createOneStudent);
+router.route("/").get(getStudents).post(createOneStudent).delete(deleteAllStudents);
 router.route("/:id").get(getOneStudentById).delete(deleteOneStudentById).put(updateOneStudentById)
 
 

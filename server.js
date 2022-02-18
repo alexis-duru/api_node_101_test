@@ -11,6 +11,7 @@ connectDB();
 import express from "express";
 import { connectDB } from "./config/db.js";
 import { router as studentRouter } from "./routes/students.route.js";
+import { router as classesRouter } from "./routes/classes.route.js";
 
 const app = express();
 
@@ -22,7 +23,12 @@ app.get("/", (req, res) => {
     res.send("B3 WEB");
 });
 
+// app.get("/students", (req, res) => {
+//     res.send("Hello Student");
+// });
+
 app.use("/students", studentRouter);
+app.use("/classes", classesRouter);
 
 app.listen(3000, console.log("server running on port 3000..."));
 

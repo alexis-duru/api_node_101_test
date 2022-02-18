@@ -1,0 +1,39 @@
+/*/*/*/*/*/*/*
+/* STUDENTS */
+/*/*/*/*/*/*/*
+
+STOCKAGE EN BDD AVEC MONGODB
+
+GET /students
+Récupère tous les étudiants
+
+GET /students/:id
+Récupère un étudiant via son id
+
+POST /students
+Crée un nouvel étudiant
+
+PUT /students/:id
+Modifie un étudiant via son id
+
+DELETE /students/:id
+Supprime un étudiant via son id
+
+/*/*/*/*/*/*/*
+/* CLASSES */
+/*/*/*/*/*/*/*
+
+GET /classes
+Récupère tous les étudiants
+
+GET /classes/:id
+Récupère un étudiant via son id
+
+POST /classes
+Crée un nouvel étudiant
+
+PUT /classes/:id
+Modifie un étudiant via son id
+
+DELETE /classes/:id
+Supprime un étudiant via son id
