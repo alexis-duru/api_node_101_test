@@ -22,10 +22,6 @@ app.get("/", (req, res) => {
     res.send("B3 WEB");
 });
 
-// app.get("/students", (req, res) => {
-//     res.send("Hello Student");
-// });
-
 app.use("/students", studentRouter);
 
 app.listen(3000, console.log("server running on port 3000..."));
